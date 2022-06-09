@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRestaurantCecar.View.Menu"
+             BackgroundColor="black">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Back" Margin="15" Clicked="Btn_Regresar" BackgroundColor="white" TextColor="black"/>
+            <Button Text="Historial de compras" Margin="15,-10,15,2" Clicked="Btn_Historial" BackgroundColor="white" TextColor="black"/>
+            <Frame   Padding="2,4,34,-2" Margin="18,15,20,20" CornerRadius="30" Opacity="0.5" BorderColor="Beige" BackgroundColor="#0FC2C0" WidthRequest="250">
+
+                <SearchBar  Placeholder="Search Food"
+                   CancelButtonColor="Black"
+                   PlaceholderColor="Black"
+                   TextColor="Black"
+                   TextTransform="Lowercase"
+                   HorizontalTextAlignment="Center"
+                   FontSize="18"
+                   x:Name= "SearchBar"
+                   TextChanged="TextChanged"
+                    />
+            </Frame>
+
+
+            <ListView x:Name="FoodList" ItemSelected="FoodList_ItemSelected" HasUnevenRows="True" BackgroundColor="Transparent"  Margin="20,10,20,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid BackgroundColor="#0CABA8" Padding="10">
+                                <Frame CornerRadius="15">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image  Opacity="0.7" BackgroundColor="Transparent" Source="{Binding Image}" WidthRequest="120" HeightRequest="100"/>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="Name" TextColor="black" FontAttributes="Bold"/>
+                                            <Label  Text="{Binding Name}" TextColor="black" FontAttributes="italic"/>
+                                            <Label Text="Price" TextColor="black" FontAttributes="Bold"/>
+                                            <Label  Text="{Binding Price}" TextColor="black" FontAttributes="Italic"/>
+
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+ 
+</ContentPage>

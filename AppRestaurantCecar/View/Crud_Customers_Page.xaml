@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRestaurantCecar.View.Crud_Customers_Page"
+             BackgroundImageSource="https://i.pinimg.com/736x/72/c6/10/72c610d2449972eb4aeb12135aa90634.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="10,40,10,10" Margin="40">
+
+            <!--<Image Source="icon_login" WidthRequest="250" Margin="20"/>-->
+            <Frame BackgroundColor="yellow" CornerRadius="10" Padding="4" Opacity="0.8">
+                <Entry x:Name="customer_id" Text="" PlaceholderColor="green"  IsReadOnly="True" Placeholder="" VerticalOptions="Center"/>
+            </Frame>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Frame BackgroundColor="red" CornerRadius="10" Padding="4" Opacity="0.8">
+                <Entry x:Name="names" PlaceholderColor="green"  VerticalOptions="Center"/>
+            </Frame>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Frame BackgroundColor="yellow" CornerRadius="10" Padding="4" Opacity="0.8">
+                <Entry x:Name="cellphone" PlaceholderColor="green" VerticalOptions="Center"/>
+            </Frame>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Frame BackgroundColor="red" CornerRadius="10" Padding="4" Opacity="0.8">
+                <Entry x:Name="password" PlaceholderColor="green"  IsPassword="True" VerticalOptions="Center"/>
+            </Frame>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Frame BackgroundColor="yellow" CornerRadius="10" Padding="4" Opacity="0.8">
+                <Entry x:Name="address" PlaceholderColor="green"  VerticalOptions="Center"/>
+            </Frame>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Button Clicked="Btn_Actualizar" BackgroundColor="Gray" CornerRadius="10" Text="Update" Margin="1,10,1,1"/>
+            <Button Clicked="Btn_Eliminar" BackgroundColor="Gray" CornerRadius="10" Text="Delete" Margin="1,10,1,1"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

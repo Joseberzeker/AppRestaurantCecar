@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRestaurantCecar.View.Admin_Menu">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand">
+        <StackLayout BackgroundColor="yellow">
+
+            <Button Text="Back" BackgroundColor="Black" TextColor="white" Clicked="Btn_Back"/>
+            <Label Text="Seleccione el panel a Administrar" FontAttributes="Bold" HorizontalOptions="Center" FontSize="20"/>
+            <Label Text="Customers" HorizontalOptions="Center" FontSize="20"/>
+            <ImageButton Clicked="Btn_Customers" BackgroundColor="Black" WidthRequest="300" HeightRequest="300" Source="https://img.freepik.com/foto-gratis/alegres-amigos-sentados-cafeteria-hablando-si_171337-19750.jpg"/>
+            <Label Text="Food" HorizontalOptions="Center" FontSize="20"/>
+            <ImageButton BackgroundColor="Black" WidthRequest="300" HeightRequest="300" Source="https://img.freepik.com/foto-gratis/alitas-pollo-calientes-papas-fritas-salsa-tomate-mostaza_106812-196.jpg"/>
+            <Label Text="Orders"  HorizontalOptions="Center" FontSize="20"/>
+            <ImageButton BackgroundColor="Black" WidthRequest="300" HeightRequest="300" Source="https://img.freepik.com/foto-gratis/registro-pedidos_1098-13337.jpg"/>
+            <!--<ImageButton Source="https://img.freepik.com/vector-gratis/gente-comiendo-comida-ilustrada_52683-34516.jpg"/>-->
+            <Button  BackgroundColor="Black"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

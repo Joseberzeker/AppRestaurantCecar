@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRestaurantCecar.View.Login_Page"
+             BackgroundImageSource="https://i.pinimg.com/736x/0d/9e/8e/0d9e8eb86486457cd620c98ebdbc525c.jpg">
+    <ContentPage.Content>
+        <StackLayout Padding="10,40,10,10" Margin="40">
+
+            <Image Source="icon_login" WidthRequest="250" Margin="20"/>
+
+            <Frame BackgroundColor="yellow" CornerRadius="10" Padding="4" Opacity="0.8">
+                <Entry x:Name="customer_id" PlaceholderColor="green" Placeholder="Enter the customer id" VerticalOptions="Center"/>
+            </Frame>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Frame BackgroundColor="red" CornerRadius="10" Padding="4" Opacity="0.8">
+                <Entry x:Name="password" PlaceholderColor="green" Placeholder="Enter the password" IsPassword="True" VerticalOptions="Center"/>
+            </Frame>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Button Clicked="Btn_Menu" BackgroundColor="Yellow" CornerRadius="10" Text="Login" Margin="1,10,1,1"/>
+            <BoxView BackgroundColor="Green" HeightRequest="15"/>
+            <Button Clicked="Btn_Admin" BackgroundColor="Yellow" CornerRadius="10" Text="Login Admin" Margin="1,10,1,1"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
